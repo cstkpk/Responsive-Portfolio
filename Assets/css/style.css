@@ -160,16 +160,25 @@ img {
 }
 
 /* Media tag for desktop */
-@media screen and (max-width: 980px) {
-
+@media screen and (max-width: 980px) { /* How to get header placed correctly? */
+.main-content {
+    max-width: 700px;
+    margin: 10px 0px 40px 0px;
+}
 }
 
 /* Media tag for tablet */
 @media screen and (max-width: 768px) {
-
+.main-content {
+    max-width: 748px;
+    margin: auto;
+}
 }
 
-/* Media tag to phone */
+/* Media tag for phone */
 @media screen and (max-width: 640px) {
-    
+.main-content {
+    max-width: 620px;
+    margin: auto;
+}
 }
