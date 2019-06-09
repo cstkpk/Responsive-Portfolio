@@ -170,7 +170,7 @@ img {
 /* Media tag for tablet */
 @media screen and (max-width: 768px) {
 .main-content {
-    max-width: 748px;
+    max-width: 668px;
     margin: auto;
 }
 }
@@ -178,7 +178,7 @@ img {
 /* Media tag for phone */
 @media screen and (max-width: 640px) {
 .main-content {
-    max-width: 620px;
+    max-width: 540px;
     margin: auto;
 }
 }
