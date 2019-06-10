@@ -50,6 +50,9 @@ body {
     font-family: "Georgia", Times, Times New Roman, serif;
     font-weight: bold;
     float: left;
+    animation-name: logo;
+    animation-duration: 5s;
+    animation-direction: reverse;
 }
 
 /* Style the main content container */
@@ -159,11 +162,34 @@ img {
     height: 100px;
 }
 
+/* CSS Animation */
+@keyframes logo {
+    from {background-color: #4aaaa5;}
+    to {background-color: white;}
+}
+
 /* Media tag for desktop */
 @media screen and (max-width: 980px) { /* How to get header placed correctly? */
 .main-content {
-    max-width: 700px;
-    margin: 10px 0px 40px 0px;
+    max-width: 620px;
+    margin: 60px 0px 0px 30px;
+}
+
+.topnav {
+    position: fixed;
+}
+
+#logo {
+    margin-left: 30px;
+}
+
+.links {
+    margin-right: 50px;
+}
+
+.column {
+    width: 40%;
+    margin-left: 30px;
 }
 }
 
@@ -171,7 +197,28 @@ img {
 @media screen and (max-width: 768px) {
 .main-content {
     max-width: 668px;
-    margin: auto;
+    margin: 60px auto;
+}
+
+.topnav {
+    position: fixed;
+}
+
+.topnav-text {
+    max-width: 768px;
+}
+
+#logo {
+    margin-left: 30px;
+}
+
+.links {
+    margin-right: 30px;
+}
+
+.column {
+    width: 40%;
+    margin-left: 30px;
 }
 }
 
@@ -181,4 +228,28 @@ img {
     max-width: 540px;
     margin: auto;
 }
+
+#logo {
+    width: 640px;
+    margin-left: 0;
+    text-align: center;
+}
+
+.topnav {
+    position: static;
+}
+
+.topnav-text {
+    max-width: 640px;
+}
+
+.links {
+    display: inline-block;
+    margin-left: 220px;
+}
+
+.column {
+    width: 90%;
+}
+
 }
